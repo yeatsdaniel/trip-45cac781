@@ -32,13 +32,17 @@
   .tl .t { font-size:12.5px; font-weight:800; color:#FFB03A; min-width:44px; font-variant-numeric:tabular-nums; }
   .tl .e { font-size:12.5px; color:#D7E3ED; line-height:1.45; }
   .sec { margin:20px 12px 0; }
-  .sec .sec-h { display:flex; align-items:center; gap:8px; padding:0 2px 8px; }
+  .sec .sec-h { display:flex; align-items:center; gap:8px; padding:0 2px 8px; flex-wrap:wrap; }
+  .sec-h .t1 { flex:1 1 100%; }
+  .sec-h .t2 { flex:0 0 auto; }
   .sec .sec-h .bar { width:4px; height:18px; background:#FFB03A; border-radius:2px; }
   .sec .sec-h .t1 { font-size:17px; font-weight:800; }
   .sec .sec-h .t2 { font-size:11.5px; color:#7C93A6; margin-left:auto; text-align:right; }
   .seg { background:#16232F; border-radius:16px; overflow:hidden; border:1px solid #24384A; max-width:390px; }
   .seg + .seg { margin-top:12px; }
-  .seg .head { display:flex; align-items:center; gap:10px; padding:12px 14px 8px; }
+  .seg .head { display:flex; align-items:center; gap:10px; padding:12px 14px 8px; flex-wrap:wrap; }
+  .head .n { flex:0 0 auto; }
+  .head > div:last-child { margin-left:auto; }
   .seg .wid { background:#2E86AB; color:#fff; font-weight:800; font-size:13px; border-radius:8px; padding:3px 9px; letter-spacing:.5px; flex:none; }
   .seg .wid.walk { background:#2E9E6B; }
   .seg .wid.car { background:#8A6FBF; }
@@ -101,7 +105,7 @@
   .pverify b { color:#EAF0F6; }
   .mapcard img { max-width:100%; height:auto; display:block; }
   img { max-width:100%; }
-  audio { width:100%; max-width:100%; }
+  audio { width:100% !important; max-width:100% !important; flex:0 0 100% !important; }
   #day05, #day06, #day07 { scroll-margin-top:64px; }
   .pnav a { text-decoration:none; }
   .pnav a small { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:block; }
@@ -295,17 +299,21 @@
   <div class="sec-h">
     <div class="bar" style="width:4px;background:#7B5EA7;border-radius:2px;"></div>
     <div class="t1">⑤ Gurney 日落 + Lili 晚餐（18:15-21:15） <a href="https://www.google.com/maps/search/?api=1&query=Gurney+Bay,+George+Town" style="color:#7FD1FF;text-decoration:none;font-weight:400">Gurney Bay ↗</a></div>
-  <div class="tip">🍸 <b>白金福利·Good Society（1 楼大堂吧）Elite Menu 免费饮品</b>：白天档 11:00-20:00 咖啡/茶/果汁免费——入住歇脚先喝一轮；<b>酒精档 18:00-20:00</b>（无标价=免费）。点单：①Ooh! Long Iced Tea=招牌 ②The Northam Road 白酒黑加菊酒度最低给妈妈 ③G&T 可定制香料水果 ④爸爸=Jameson Black Barrel 纯饮。18:00-18:15 窗口坐下先点；确认 craft 鸡尾酒含在免费档。10/9 休整段再喝一轮。（小红书两篇一手帖+实物酒单三源）。英文话术：问覆盖="Does the complimentary Elite Menu cover all three of us, or just me as the member?"；点单="Room ____, ordering from the Elite Menu — one Ooh! Long Iced Tea, one The Northam Road, and one Jameson Black Barrel neat. All covered by the Platinum benefit, right?"（完整话术卡已发飞书）</div>
-<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day04_04_GurneyBay海滨日落.m4a"></audio></div>
+
     <div class="t2">步行 1.33km 去程<br>回程看体力 Grab</div>
   </div>
+<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day04_04_GurneyBay海滨日落.m4a"></audio></div>
+<div class="tip">🍸 <b>白金福利·Good Society（1 楼大堂吧）Elite Menu 免费饮品</b>：白天档 11:00-20:00 咖啡/茶/果汁免费——入住歇脚先喝一轮；<b>酒精档 18:00-20:00</b>（无标价=免费）。点单：①Ooh! Long Iced Tea=招牌 ②The Northam Road 白酒黑加菊酒度最低给妈妈 ③G&T 可定制香料水果 ④爸爸=Jameson Black Barrel 纯饮。18:00-18:15 窗口坐下先点；确认 craft 鸡尾酒含在免费档。10/9 休整段再喝一轮。（小红书两篇一手帖+实物酒单三源）。英文话术：问覆盖="Does the complimentary Elite Menu cover all three of us, or just me as the member?"；点单="Room ____, ordering from the Elite Menu — one Ooh! Long Iced Tea, one The Northam Road, and one Jameson Black Barrel neat. All covered by the Platinum benefit, right?"（完整话术卡已发飞书）</div>
+
   <div class="seg">
     <div class="head"><div class="n">沿海堤步行去 Gurney Bay</div><div class="m">爸妈速 ~27min</div></div>
     <div class="bodyx">酒店出门沿 Northam 路滨海步道一路走，右手边就是海。🚻 出发前酒店先排空——Gurney Bay 入口有公厕。10/8 日落 19:07（10/07 核 timeanddate）——<b>18:40 前到位占机位</b>（金色时刻 18:40-19:10 → 日落 → 蓝调 19:30）。米白浅色穿搭逆光出片。</div>
   </div>
   <div class="seg">
     <div class="head"><div class="n">晚餐 Lili（酒店 2 楼）</div>
-<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day04_05_Lili晚餐.m4a"></audio></div><div class="m">$100 额度（当前汇率约 RM410-420）</div></div>
+<div class="m">$100 额度（当前汇率约 RM410-420）</div></div>
+<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day04_05_Lili晚餐.m4a"></audio></div>
+
     <div class="bodyx">Modern Malaysian；招牌鳕鱼 Assam Pedas 炖饭 RM128 / 烟熏牛 flank RM138。晚市 18:00-22:00，21:00 前入座从容；订位 WhatsApp <b>+60 12-201 6988</b>（比总机快）。点菜前先问前台"抵扣挂到房账哪一档"——额度 per room per stay、不抵房费/税，超额自补（人均 RM100-150 参考）。</div>
   </div>
   <div class="note"><b>♿ 当日强度：</b>步行集中在傍晚 1.33km（平路海堤），其余全在车船换乘。走累回程 Grab RM8-10/5min。当日步数 ~9000，爸妈可接受。</div>
@@ -562,9 +570,11 @@
   <div class="sec-h">
     <div class="bar" style="width:4px;background:#7B5EA7;border-radius:2px;"></div>
     <div class="t1">① 步行进老城 → 早市（09:20-10:45） <a href="https://www.google.com/maps/search/?api=1&query=TeoChew+Duck+Meat+Koay+Teow+Soup,+Lebuh+Kimberley" style="color:#7FD1FF;text-decoration:none;font-weight:400">TeoChew 165 号 ↗</a></div>
-<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_01_汕头街早市.m4a"></audio></div>
+
     <div class="t2">1.9km · 爸妈速 35-40min<br>走累随时 Grab</div>
   </div>
+<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_01_汕头街早市.m4a"></audio></div>
+
   <div class="rr">
     <div class="wid walk">W1</div>
     <div class="meta"><div class="l1">Millen → 汕头街（步行）</div><div class="l2">Google 步行 2.4km · 沿 Northam Rd → Burmah Rd，一路殖民洋楼骑楼街廊</div></div>
@@ -579,9 +589,11 @@
   <div class="sec-h">
     <div class="bar" style="width:4px;background:#2C7A9E;border-radius:2px;"></div>
     <div class="t1">② 壁画带 + 小印度庙（10:45-12:00） <a href="https://www.google.com/maps/search/?api=1&query=5.4141,100.3379" style="color:#7FD1FF;text-decoration:none;font-weight:400">壁画街 ↗</a></div>
-<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_02_壁画带.m4a"></audio></div>
+
     <div class="t2">步行圈 550-700m<br>零回头路</div>
   </div>
+<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_02_壁画带.m4a"></audio></div>
+
   <div class="rr">
     <div class="wid walk">W2</div>
     <div class="meta"><div class="l1">汕头街 → Armenian 街壁画带（步行）</div><div class="l2">Google 步行 550-700m · 姐弟共骑 → 邱公司祠堂 → 孙中山馆 → 小印度庙一路串</div></div>
@@ -597,9 +609,11 @@
   <div class="sec-h">
     <div class="bar" style="width:4px;background:#C2571A;border-radius:2px;"></div>
     <div class="t1">③ AGL 米其林一星午餐（12:00-13:30） <a href="https://www.google.com/maps/search/?api=1&query=Auntie+Gaik+Lean's+Old+School+Eatery,+1+Bishop+St" style="color:#7FD1FF;text-decoration:none;font-weight:400">AGL ↗</a></div>
-<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_05_AuntieGaikLean米其林娘惹.m4a"></audio></div>
+
     <div class="t2">1 Bishop St<br>3 人 6-7 菜 RM350-500</div>
   </div>
+<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_05_AuntieGaikLean米其林娘惹.m4a"></audio></div>
+
   <div class="seg">
     <div class="head"><div class="n">Auntie Gaik Lean's Old School Eatery</div><div class="m">★ 2026 官网复核在榜</div></div>
     <div class="bodyx">槟城唯一星级娘惹家常菜。<b>必点：Pie Tee 顶蚌 / gulai tumis 咖喱鱼 / Nasi Ulam 香草饭 / Curry Kapitan</b>；主菜 RM38-118。周三-日 12:00-14:30/18:00-21:30（周六✓）。老板娘 12 岁跟妈妈学艺，第四代娘惹——"米其林评的是阿嬷的手艺，不是摆盘"。店里有自家娘惹甜品收尾（煎蕊已砍）。</div>
@@ -611,10 +625,12 @@
   <div class="sec-h">
     <div class="bar" style="width:4px;background:#1E8449;border-radius:2px;"></div>
     <div class="t1">④ 娘惹博物馆 + 小印度（13:45-16:15） <a href="https://www.google.com/maps/search/?api=1&query=Pinang+Peranakan+Mansion,+29+Church+St" style="color:#7FD1FF;text-decoration:none;font-weight:400">侨生博物馆 ↗</a></div>
-<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_07_小印度街区.m4a"></audio></div>
-<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_03_龙山堂邱公司.m4a"></audio></div>
+
     <div class="t2">29 Church St<br>RM30/人 含导览</div>
   </div>
+<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_07_小印度街区.m4a"></audio></div>
+<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_03_龙山堂邱公司.m4a"></audio></div>
+
   <div class="seg">
     <div class="head"><div class="n">娘惹博物馆 Pinang Peranakan Mansion</div><div class="m">90min 完整档</div></div>
     <div class="bodyx">郑景贵大宅，1000+ 件原物陈列。<b>门票含免费导览、有中文场</b>（场次随人流，进门问接待）。刚吃完星级娘惹菜再看娘惹大宅——"菜和屋是同一种文化的两半"。</div>
@@ -632,9 +648,11 @@
   <div class="sec-h">
     <div class="bar" style="width:4px;background:#B23A3A;border-radius:2px;"></div>
     <div class="t1">⑤ Grab → 巴都丁宜（16:15-17:15） <a href="https://www.google.com/maps/search/?api=1&query=Ferringhi+Bay+Beach" style="color:#7FD1FF;text-decoration:none;font-weight:400">Ferringhi Bay ↗</a></div>
-<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_08_巴都丁宜海滩日落.m4a"></audio></div>
+
     <div class="t2">16km · 周六傍晚 45-60min<br>RM30-40</div>
   </div>
+<div style="margin:8px 0 2px;padding:8px 10px;background:rgba(255,255,255,.06);border-radius:10px;"><div style="font-size:11px;color:#9aa5b1;margin-bottom:4px;">🎧 讲解音频（1.25x 版）</div><audio controls preload="none" style="width:100%;height:36px;" src="audio/day06_08_巴都丁宜海滩日落.m4a"></audio></div>
+
   <div class="rr">
     <div class="wid car">R1</div>
     <div class="meta"><div class="l1">老城 → Ferringhi Bay 海滨</div><div class="l2">Google 实时 17.3km · 周六傍晚北部沿海路堵车高发段——车上补觉，带薄外套</div></div>
