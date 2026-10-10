@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="zh">
 <head>
-<meta name="robots" content="noindex, nofollow">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-<title>槟城收官+香港返程 · 10/10-10/11 · 导航版</title>
+<meta name="robots" content="noindex, nofollow">
+<title>香港返程日 · 10/11 · 导航版</title>
 <style>
   * { margin:0; padding:0; box-sizing:border-box; }
   html { background:#0A1219; overflow-x:hidden; }
@@ -26,46 +26,43 @@
   .hero .chips { display:flex; gap:8px; margin-top:12px; flex-wrap:wrap; }
   .hero .chips span { font-size:11.5px; background:rgba(255,255,255,.12); border:1px solid rgba(255,255,255,.22); padding:4px 10px; border-radius:999px; }
   .tl { padding:14px 20px 4px; }
-  .tl .row { display:flex; align-items:flex-start; gap:10px; padding:5px 0; }
-  .tl .t { font-size:12.5px; font-weight:800; color:#FFB03A; min-width:44px; font-variant-numeric:tabular-nums; }
-  .tl .e { font-size:12.5px; color:#D7E3ED; line-height:1.45; }
+  .tl .tlh { font-size:12px; color:#7FD1FF; font-weight:800; letter-spacing:1px; margin-bottom:10px; }
+  .tl .row { display:flex; align-items:flex-start; gap:10px; padding:5px 0; border-bottom:1px dashed rgba(255,255,255,.08); }
+  .tl .row:last-child { border-bottom:none; }
+  .tl .t { flex:0 0 58px; font-size:12.5px; font-weight:800; color:#FFB03A; line-height:1.5; }
+  .tl .e { flex:1; font-size:12.5px; line-height:1.55; color:#D7E5EF; }
   .sec { margin:20px 12px 0; }
   .sec .sec-h { display:flex; align-items:center; gap:8px; padding:0 2px 8px; }
   .sec .sec-h .bar { width:4px; height:18px; background:#FFB03A; border-radius:2px; }
   .sec .sec-h .t1 { font-size:17px; font-weight:800; }
   .sec .sec-h .t2 { font-size:11.5px; color:#7C93A6; margin-left:auto; text-align:right; }
-  .seg { background:#16232F; border-radius:16px; overflow:hidden; border:1px solid #24384A; max-width:390px; }
-  .seg + .seg { margin-top:12px; }
-  .seg .head { display:flex; align-items:center; gap:10px; padding:12px 14px 8px; }
-  .seg .wid { background:#2E86AB; color:#fff; font-weight:800; font-size:13px; border-radius:8px; padding:3px 9px; letter-spacing:.5px; flex:none; }
-  .seg .wid.walk { background:#2E9E6B; }
-  .seg .wid.car { background:#8A6FBF; }
-  .seg .head .meta { flex:1; min-width:0; }
-  .seg .head .l1 { font-size:15.5px; font-weight:800; }
-  .seg .head .l2 { font-size:12px; color:#8FA8BC; margin-top:2px; }
-  .seg .head .sum { font-size:12px; color:#FFD08A; font-weight:700; white-space:nowrap; background:rgba(255,176,58,.1); padding:4px 9px; border-radius:8px; }
-  .seg img { width:100%; max-width:100%; display:block; }
+  .seg { background:#16232F; border-radius:16px; overflow:hidden; border:1px solid #24384A; max-width:390px; margin-top:12px; }
+  .seg .head { display:flex; justify-content:space-between; align-items:baseline; padding:10px 14px 4px; }
+  .seg .head .n { font-size:14.5px; font-weight:800; }
+  .seg .head .m { font-size:11px; color:#7FD1FF; font-weight:700; }
+  .bodyx { padding:0 14px 12px; font-size:12.5px; line-height:1.6; color:#C9DCE9; }
+  .bodyx b { color:#fff; }
+  .mapcard { margin:6px 14px 14px; border-radius:10px; overflow:hidden; border:1px solid rgba(127,209,255,.25); }
   .maptag { display:flex; align-items:center; gap:6px; padding:7px 14px 5px; font-size:11.5px; color:#7FD1FF; font-weight:700; }
   .maptag .ic { width:16px; height:16px; border-radius:4px; background:#24435C; display:flex; align-items:center; justify-content:center; font-size:10px; }
-  .steps { padding:10px 14px 4px; }
-  .steps .st { display:flex; gap:9px; padding:5.5px 0; border-bottom:1px dashed #26394B; align-items:flex-start; }
-  .steps .st:last-child { border-bottom:none; }
-  .steps .n { background:#24435C; color:#7FD1FF; font-size:11px; font-weight:800; min-width:20px; height:20px; border-radius:6px; display:flex; align-items:center; justify-content:center; margin-top:1px; flex:none; }
-  .steps .tx { font-size:13.5px; line-height:1.45; color:#E4EDF4; flex:1; }
-  .steps .tx b { color:#fff; }
-  .steps .d { font-size:11.5px; color:#7C93A6; white-space:nowrap; margin-top:2px; font-variant-numeric:tabular-nums; }
-  .legsep { font-size:11.5px; color:#6FE3A5; font-weight:800; padding:7px 0 2px; letter-spacing:.5px; }
-  .poi { display:flex; gap:10px; padding:11px 14px; border-top:1px dashed #26394B; }
-  .poi .pn { flex:none; width:26px; height:26px; border-radius:50%; background:#1a73e8; color:#fff; font-weight:800; font-size:14px; display:flex; align-items:center; justify-content:center; margin-top:2px; box-shadow:0 0 0 2px #16232F, 0 0 0 4px rgba(26,115,232,.25); }
-  .poi .pn.end { background:#d93025; box-shadow:0 0 0 2px #16232F, 0 0 0 4px rgba(217,48,37,.25); }
-  .poi .body { flex:1; min-width:0; }
-  .poi .nm { font-size:14.5px; font-weight:800; }
-  .poi .tip { font-size:12px; color:#6FE3A5; margin-top:3px; line-height:1.5; }
-  .poi .story { font-size:13px; color:#D7E3ED; line-height:1.6; margin-top:7px; background:#1B2A38; border-radius:10px; padding:9px 11px; }
-  .poi .story .lbl { display:inline-block; font-size:10.5px; color:#FFB03A; font-weight:800; letter-spacing:1px; margin-bottom:4px; }
-  .note { margin:8px 14px 12px; background:#213A2E; border-left:3px solid #2E9E6B; border-radius:8px; padding:9px 11px; font-size:12.5px; color:#C4E8D2; line-height:1.55; }
-  .note.warn { background:#3A2E21; border-left-color:#E8912D; color:#F0D9B8; }
-  .note b { color:#fff; }
+  .mapcard img { width:100%; display:block; }
+  .wid { width:34px; height:34px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:800; margin:10px 14px; }
+  .wid.car { background:#B23A3A; color:#fff; }
+  .wid.train { background:#2C7A9E; color:#fff; }
+  .wid.walk { background:#7B5EA7; color:#fff; }
+  .wid.flight { background:#1E8449; color:#fff; }
+  .rr { display:flex; align-items:flex-start; }
+  .meta { flex:1; padding-top:8px; }
+  .meta .l1 { font-size:14px; font-weight:800; }
+  .meta .l2 { font-size:11px; color:#8FB4CC; margin-top:3px; line-height:1.45; }
+  .note { background:rgba(255,176,58,.08); border-left:3px solid #FFB03A; padding:8px 12px; margin:8px 14px 14px; font-size:11.5px; line-height:1.6; color:#EAD9B8; border-radius:0 8px 8px 0; }
+  .note b { color:#FFB03A; }
+  .warn { background:rgba(178,58,58,.12); border-left:3px solid #B23A3A; padding:8px 12px; margin:8px 14px 14px; font-size:11.5px; line-height:1.6; color:#F0D5D5; border-radius:0 8px 8px 0; }
+  .warn b { color:#FF8A8A; }
+  .story { background:rgba(46,204,113,.07); border-left:3px solid #2ECC71; padding:9px 12px; margin:8px 14px 14px; font-size:12px; line-height:1.7; color:#CDE8D8; border-radius:0 8px 8px 0; }
+  .story .lbl { display:inline-block; background:#2ECC71; color:#08281A; font-size:10.5px; font-weight:800; padding:1px 8px; border-radius:99px; margin-bottom:5px; }
+  .tip { font-size:11px; color:#8FB4CC; padding:2px 14px 10px; line-height:1.5; }
+  .tip b { color:#7FD1FF; }
   .lookup { padding: 6px 14px 8px; }
   .lookup .lk { display:flex; gap:10px; padding:6px 0; border-bottom:1px dashed #26394B; align-items:flex-start; }
   .lookup .lk:last-child { border-bottom:none; }
@@ -75,233 +72,26 @@
   .lookup .cn { font-size:13.5px; font-weight:800; line-height:1.4; }
   .lookup .st { font-size:13px; color:#7FD1FF; font-weight:700; margin-top:1px; line-height:1.4; }
   .lookup .rm { font-size:11px; color:#7C93A6; margin-top:1px; line-height:1.4; }
-  .footer { text-align:center; font-size:11px; color:#5E7589; margin-top:22px; }
+  .footer { text-align:center; font-size:11px; color:#5E7589; margin-top:22px; padding-bottom:24px; }
   .daysep { height:34px; background:#0B141D; }
-  body { padding:0; }
-  .mapcard img { max-width:100%; height:auto; display:block; }
-
-  /* ---- desktop adaptation (placed last to win cascade) ---- */
-  .idx-banner, .idx-daynav { width:100%; }
-  @media (min-width:700px) {
-    .idx-banner, .idx-daynav { max-width:640px; }
-    .note { max-width:616px; }
-    .seg { max-width:616px; }
-  }
-  @media (min-width:1100px) {
-    .idx-banner, .idx-daynav { max-width:760px; }
-    .note { max-width:712px; }
-    .seg { max-width:712px; }
-  }
+  .idx-banner { width:100%; }
+  @media (min-width:700px) { .idx-banner { max-width:640px; } }
+  @media (min-width:1100px) { .idx-banner { max-width:760px; } }
 </style>
 </head>
 <body>
 <div class="idx-banner" style="width:100%;margin:0 auto;background:linear-gradient(135deg,#0E2A3E,#1C5A7A);border-bottom:1px solid #1E3446;padding:14px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;">
   <div>
-    <div style="font-size:14.5px;font-weight:800;color:#FFB03A;">收官两日版 · 10/10-10/11</div>
-    <div style="font-size:11.5px;color:#AFC9DC;margin-top:3px;line-height:1.5;">只含 10/10 槟城收官日 + 10/11 香港返程 · 前序行程已完成归档 · 顶部日导航直达</div>
+    <div style="font-size:14.5px;font-weight:800;color:#FFB03A;">香港返程日 · 10/11（周日）</div>
+    <div style="font-size:11.5px;color:#AFC9DC;margin-top:3px;line-height:1.5;">本页只含 10/11 香港一天 · 槟城段已完成归档 · CX622 11:30 落地 → CX302 21:05 起飞</div>
   </div>
-  <a href="#day07" style="flex-shrink:0;background:#FFB03A;color:#1B2A3A;font-weight:800;font-size:13px;padding:9px 14px;border-radius:999px;text-decoration:none;">今天 10/10 →</a>
+  <a href="#day08" style="flex-shrink:0;background:#FFB03A;color:#1B2A3A;font-weight:800;font-size:13px;padding:9px 14px;border-radius:999px;text-decoration:none;">开始 ↓</a>
 </div>
-
-<div style="display:flex;flex-wrap:wrap;gap:6px;justify-content:center;max-width:720px;margin:0 auto">
-<a href="#day07" style="text-decoration:none;background:#16232F;border:1px solid #2E4257;color:#EAF0F6;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;white-space:nowrap">10/10 周六<br>老城+海滩+火舞</a><a href="#day08" style="text-decoration:none;background:#16232F;border:1px solid #2E4257;color:#EAF0F6;border-radius:999px;padding:4px 10px;font-size:12px;font-weight:700;white-space:nowrap">10/11 周日<br>返程·香港</a>
-</div>
-
-<div class="daysep"></div><a id="day07"></a>
+<div style="height:10px;"></div><a id="day08"></a>
 
 
 <div class="hero">
-  <div class="datechip">10/10（周六）· 自由导航版 v17.3</div>
-  <h1>老城壁画+印度庙 · Deen Mutiara · 沙滩火舞收官</h1>
-  <div class="sub">自然醒 → <b>09:00 Grab 打车进老城</b>（3.3km/10min，落车壁画西端）→ 壁画→孙中山馆→邱公司（外围免费）→印度庙 <b>零回头</b> → 11:15 午餐 <b>Nasi Kandar Deen Mutiara</b>（★4.9 开门头波）→ <b>饭后步行 21min 回酒店</b>休整 → <b>15:15 榴莲走廊</b>（Ah Teik 50 年老档+888 备份）→ 16:00 出发巴都丁宜：手信+LEVANT+日落+<b style="color:#FFB03A;">19:30 火舞秀</b><br>v17.3：邱公司免费版·和谐街砍除（马六甲已看同类）·榴莲补位·明早 04:45 叫早</div>
-  <div class="chips">
-    <span>🍛 Deen Mutiara ★4.9 头波</span><span>🦀 榴莲走廊 Ah Teik+888</span><span>⏰ 印度庙 12:00 闭门</span><span>🚗 16:00 出发海滩</span><span>🚻 厕所动线已排</span>
-  </div>
-</div>
-
-<div class="tl">
-  <div class="tlh">⏱ 全天时间轴</div>
-  <div class="row"><div class="t">08:00</div><div class="e">酒店早餐（Lili 慢慢吃）——今天不早起，自然醒再下楼</div></div>
-  <div class="row"><div class="t">09:00</div><div class="e">酒店门口 <b>Grab 打车进老城</b>（G1 · 3.3-4.1km/10-11min/RM10-15；落车点=Armenian 街西端姐弟共骑壁画处）</div></div>
-  <div class="row"><div class="t">09:15</div><div class="e">落车 Armenian 街西端 → 壁画打卡（姐弟共骑 2 号+沿途 3-4 幅，25min 慢逛拍照）</div></div>
-  <div class="row"><div class="t">09:40</div><div class="e">东行 150m 孙中山馆（120 Armenian · RM10 · <b>9:00 刚开门即入</b>，早场人最少；排队>15min 即跳过）→ 10:10 南拐 230m <b>邱公司外围</b>（Cannon Sq <b>不买票</b>：骑楼门厅+广场看金漆木雕燕尾脊免费；正祠 RM17 不进，10:25 走）</div></div>
-  <div class="row"><div class="t">10:30</div><div class="e">北穿爱情巷口（Cannon/Chulia 路口拍照）→ 334m 斯里玛哈玛丽安曼庙（1833 最老印度庙；上午窗 8:00-12:00；⏰ 12:00 整午休闭门——11:00 看完撤；脱鞋、过肩过膝）</div></div>
-  <div class="row"><div class="t">11:00</div><div class="e">步行 1.1km/15min（Lebuh Campbell 直线北上）→ 11:15 到店等开门</div></div>
-  <div class="row"><div class="t">11:15</div><div class="e">午餐：Nasi Kandar Deen Mutiara ★4.9（74 Jalan Hutton·<b>11:00 开门头波进最稳</b>·ayam 炸鸡+banjir 混酱浇饭·人均 RM15-20；清真）——提前到=避 12:00 后最凶排队</div></div>
-  <div class="row"><div class="t">12:30</div><div class="e"><b>饭后步行回酒店</b>（W3 · 1.5km/21min，Jalan Hutton 一路向西消食）→ 12:55 到店休整：🧳 行李大头现在收 · 泳池 15 点前 · Good Society 免费饮品下午档</div></div>
-  <div class="row"><div class="t">15:15</div><div class="e"><b>🦀 榴莲走廊</b>（Grab 4min/RM8-10 到 Lorong Susu）：<b>Ah Teik 榴莲档</b>（50 年三代老档·全年营业·10:00 开·☎ +60 12-438 3881）论个买；<b>没开/没货 → 步行 290m 888 Durian</b>（新世界公园对面·10:00-22:00）；15:50 前吃完回酒店</div></div>
-  <div class="row"><div class="t">15:45</div><div class="e">休整结束，前台结清房账/确认早餐盒前置动作可先做</div></div>
-  <div class="row"><div class="t">16:00</div><div class="e">Grab 去巴都丁宜（14.8km/45-60min 周六晚峰——16:00 走避 17:00 起的堵车高发段；车上补觉，带薄外套）</div></div>
-<div class="row"><div class="t">17:15</div><div class="e">到 Ferringhi Bay：先逛手信摊（爸妈回血）→ 17:45 LEVANT 入座开吃（B1-G2 直面沙滩·沙袋位正对舞台）</div></div>
-<div class="row"><div class="t">19:15</div><div class="e">沙袋位就位等开演——19:10 日落就在位上看，19:30 Fire Phantom 开演（正对 B2 栋舞台）</div></div>
-  <div class="row"><div class="t">19:30</div><div class="e"><b style="color:#FFB03A;">🔥 火舞秀开演</b>（Fire Phantom：火流星+吞火喷火球+压轴「火花笼」；30-45min；免费）</div></div>
-<div class="row"><div class="t">20:15</div><div class="e">散场即走：LEVANT 买单（低消已含在餐费，无额外看秀成本）→ 店内最后如厕 → 20:25 门口 Grab</div></div>
-<div class="row"><div class="t">20:25</div><div class="e">Ferringhi Bay 门口 Grab 回酒店（14.8km/RM30-40·~25min）——比原计划早回约 50min</div></div>
-  <div class="row"><div class="t">20:50</div><div class="e">收尾三件事：行李查漏（大头下午已收✔）· 房账结清 · 确认早餐盒 takeaway——22:00 前躺下（明晨 04:45 叫早/05:15 出发/05:45 到场，柜台 06:30 硬关）</div></div>
-
-
-<!-- ═══════════ 第零节：全天总览 ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar"></div>
-    <div class="t1">全天动线总览</div>
-    <div class="t2">编号 = 游览顺序<br>细节看下面分卡</div>
-  </div>
-  <div class="seg">
-    <div class="maptag"><div class="ic">🄟</div>全天点位总览图 · 上半场</div>
-    <img src="maps/ov-d07a.png" alt="总览图">
-    <div class="maptag"><div class="ic">🄟</div>全天点位总览图 · 下半场</div>
-    <img src="maps/ov-d07b.png" alt="总览图">
-    <div class="lookup">
-      <div class="lk"><div class="n hb">H</div><div class="bd"><div class="cn">The Millen（起终点）</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=The Millen, Jalan Sultan Ahmad Shah" style="color:#7FD1FF;text-decoration:none">The Millen, Jalan Sultan Ahmad Shah ↗</a></div><div class="rm">大本营</div></div></div>
-      <div class="lk"><div class="n ">1</div><div class="bd"><div class="cn">壁画带 Armenian 街西端（09:15 落车）</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Kids+on+Bicycle,+Lebuh+Armenian,+10100+George+Town" style="color:#7FD1FF;text-decoration:none">Armenian Street ↗</a></div><div class="rm">打车落点·姐弟共骑2号·零回头起点</div></div></div>
-      <div class="lk"><div class="n ">2</div><div class="bd"><div class="cn">姐弟共骑壁画</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=5.41580,100.33650" style="color:#7FD1FF;text-decoration:none">Armenian Street, George Town ↗</a></div><div class="rm">上午人少光线好</div></div></div>
-      <div class="lk"><div class="n ">3</div><div class="bd"><div class="cn">邱公司祠堂</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Leong San Tong Khoo Kongsi" style="color:#7FD1FF;text-decoration:none">Leong San Tong Khoo Kongsi ↗</a></div><div class="rm">金漆木雕+燕尾脊·正式游览15min</div></div></div>
-      <div class="lk"><div class="n ">4</div><div class="bd"><div class="cn">孙中山槟城基地</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Sun Yat Sen Museum, 120 Armenian St" style="color:#7FD1FF;text-decoration:none">Sun Yat Sen Museum, 120 Armenian St ↗</a></div><div class="rm">RM10·黄花岗策源地</div></div></div>
-      <div class="lk"><div class="n ">5</div><div class="bd"><div class="cn">斯里玛哈玛丽安曼庙</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Sri Mahamariamman Temple, George Town" style="color:#7FD1FF;text-decoration:none">Sri Mahamariamman Temple, George Town ↗</a></div><div class="rm">脱鞋过肩过膝</div></div></div>
-      <div class="lk"><div class="n ">6</div><div class="bd"><div class="cn">Deen Mutiara 午餐（11:15 头波）</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Nasi+Kandar+Deen+Mutiara,+74+Jalan+Hutton" style="color:#7FD1FF;text-decoration:none">Nasi Kandar Deen Mutiara ↗</a></div><div class="rm">★4.9·banjir混酱浇饭·人均RM15-20</div></div></div>
-      <div class="lk"><div class="n ">7</div><div class="bd"><div class="cn">回酒店休整（12:55-15:15）→榴莲走廊</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=The+Millen,+Jalan+Sultan+Ahmad+Shah" style="color:#7FD1FF;text-decoration:none">The Millen ↗</a></div><div class="rm">行李大头下午收·步行21min</div></div></div>
-      <div class="lk"><div class="n ">8</div><div class="bd"><div class="cn">榴莲走廊：Ah Teik 档（15:15）</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Ah+Teik+Durian,+Lorong+Susu,+George+Town" style="color:#7FD1FF;text-decoration:none">Ah Teik Durian, Lorong Susu ↗</a></div><div class="rm">50年老档·全年营业·888备份290m</div></div></div>
-      <div class="lk"><div class="n ">9</div><div class="bd"><div class="cn">LEVANT·日落·火舞秀（17:45 入座）</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Ferringhi+Bay+Penang" style="color:#7FD1FF;text-decoration:none">Ferringhi Bay ↗</a></div><div class="rm">日落19:07·火舞19:30免费</div></div></div>
-      <div class="lk"><div class="n ">10</div><div class="bd"><div class="cn">巴都丁宜·火舞秀（19:30）</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Ferringhi Bay Beach" style="color:#7FD1FF;text-decoration:none">Ferringhi Bay Beach ↗</a></div><div class="rm">免费·19:15 占位</div></div></div>
-<div class="lk"><div class="n">11</div><div class="bd"><div class="cn">LEVANT 收官晚餐·边吃边看（17:45）</div><div class="st"><a href="https://www.google.com/maps/search/?api=1&query=Levant+Restaurant+By+The+Sea,+Ferringhi+Bay" style="color:#7FD1FF;text-decoration:none">LEVANT, Ferringhi Bay ↗</a></div><div class="rm">★4.8·沙袋位低消RM100·正对舞台</div></div></div>
-    </div>
-    <div class="note"><b>用法：</b>点定位名直接在 Google Maps 打开该点位（或长按复制）；怎么走 Google 自己算，你只看顺序和方向。全天大骨架 = H 09:00 Grab 3.3km 进老城 → 壁画（西端）→孙中山馆→邱公司→爱情巷口→印度庙（单向直线零回头）→ 步行 15min Deen Mutiara 午餐（11:00 头波）→ 步行 21min 回酒店休整 → 16:00 Grab 14.8km → 巴都丁宜手信+LEVANT 日落火舞（一坐到底）→ Grab 回。白天/傍晚分两张图看。</div>
-  </div>
-</div>
-
-</div>
-
-<!-- ═══════════ 第一节：Grab 打车进老城 ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar" style="width:4px;background:#7B5EA7;border-radius:2px;"></div>
-    <div class="t1">① Grab 进老城 → 四点单向线（09:00-11:00）</div>
-    <div class="t2">打车 10-11min<br>老城内步行 1.4km</div>
-  </div>
-  <div class="rr">
-    <div class="wid car">G1</div>
-    <div class="meta"><div class="l1">Millen → Armenian 街西端（Grab G1）</div><div class="l2">Google 车程 3.3-4.1km/10-11min · RM10-15——落车点即姐弟共骑壁画，起步就打卡</div></div>
-  </div>
-  <div class="tip">📍 <b>今天没有早市</b>（九皇爷诞正日，摊贩不出摊——本地人 10/9 告知）。Grab 目的地输 "Armenian Street George Town"（司机多停 Armenian/Cannon 路口）；⚠️ <b>零回头单向线：壁画（西端起点）→ 东 150m 孙中山馆 → 南 230m 邱公司 → 北 334m 印度庙 → 北上 1.1km 餐厅</b>——每一步都往前走</div>
-  <div class="note"><b>🍛 午餐：Nasi Kandar Deen Mutiara</b>（★4.9 · 74 Jalan Hutton · 11:00-23:00）——<b>怎么点</b>：招牌 ayam 炸鸡 + <b>banjir 混酱浇饭</b>（让店员自选 curry 组合浇满，行家吃法）+ briyani 饭/炸鱿鱼/鹌鹑蛋；人均 RM15-20、3 人 RM50-70；排队 15-30min 翻台快；☎ +60 11-1683 9597；清真（无猪肉）；饮料点拉茶。印度庙走过去 ~1km/20min（累则 Grab 5min）。🚻 店内有用餐区厕所。</div>
-  <div class="story"><span class="lbl">🎙 给爸妈讲</span>Nasi Kandar=印度穆斯林"扁担饭"——当年印度移民挑扁担沿街卖饭起家。行家吃法叫 banjir（"洪水"）——让店员把几种咖喱混着浇满整盘饭，浇得越狠越正宗。门口排队的人多，正说明本地人也认这家，跟排就是。</div>
-</div>
-
-<!-- ═══════════ 第二节：壁画+小印度庙 ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar" style="width:4px;background:#2C7A9E;border-radius:2px;"></div>
-    <div class="t1">② 四点单向线：壁画→孙中山馆→邱公司外围→印度庙（09:15-11:00）</div>
-    <div class="t2">单向 1.4km 直线<br>零回头路</div>
-  </div>
-  <div class="rr">
-    <div class="wid walk">W2</div>
-    <div class="meta"><div class="l1">汕头街 → Armenian 街壁画带（步行）</div><div class="l2">Google 步行 550-700m · 姐弟共骑 → 邱公司祠堂 → 孙中山馆 → 小印度庙一路串</div></div>
-  </div>
-  <div class="note"><b>🎨 巡游四站（挑着看不贪多）：</b>①<b>姐弟共骑</b>（Armenian 街，2012 立陶宛画家，上午人少光线好）②邱公司祠堂（金漆木雕+燕尾脊细看，爸妈广场边坐边等）③<b>孙中山槟城基地</b>（120 Armenian St，RM10/人——1910 槟城会议策划黄花岗起义；旁边一条岔路就是<b>爱情巷 Lebuh Love</b> 小资咖啡巷，路过拍两张即可、不专程）④<b>斯里玛哈玛丽安曼庙</b>（顺路进——<b>脱鞋、过肩过膝</b>，上午开放窗内✓，<b>12:00 整午休闭门——11:40 前看完撤</b>）。</div>
-  
-  <div class="story"><span class="lbl">🎙 给爸妈讲</span>孙中山 1905-1911 五次到槟城，120 号这栋楼先后是阅书报社和同盟会南洋机关——1910 年"槟城会议"就在这开的，策划了次年广州起义（黄花岗），军饷多从南洋华侨募来。"课本里的海外筹饷，具体就是这条街。"</div>
-</div>
-
-<!-- ═══════════ 第三节：回酒店休整（v16：AGL+娘惹馆+小印度卡作废删除） ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar" style="width:4px;background:#7B5EA7;border-radius:2px;"></div>
-    <div class="t1">③ 步行回酒店休整（12:30-15:45）</div>
-    <div class="t2">步行 21min · 多 45min 富余<br>行李大头下午收</div>
-  </div>
-  <div class="rr">
-    <div class="wid walk">W2</div>
-    <div class="meta"><div class="l1">Deen Mutiara → Millen（步行 W3）</div><div class="l2">Google 步行 1.5km/21min · Jalan Hutton 一路向西直走到头即酒店——饭后消食正好，累则 Grab RM8/5min</div></div>
-  </div>
-  <div class="note"><b>🛌 休整清单：</b>🧳 <b>行李大头现在收</b>（明早 04:45 叫早，今晚回去只查漏：充电器/药品/护照）· 泳池 20:00 关想游趁 15 点前 · Good Society 大堂吧白金免费饮品下午档（11:00-20:00 咖啡/茶/果汁）喝一轮 · 顺带可把房账预结。连走两天，这 2 小时是晚上火舞秀的本钱。</div>
-</div>
-
-<!-- ═══════════ 第五节：去巴都丁宜 ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar" style="width:4px;background:#B23A3A;border-radius:2px;"></div>
-    <div class="t1">④ Grab → 巴都丁宜（16:00-17:00）</div>
-    <div class="t2">16km · 周六傍晚 45-60min<br>RM30-40</div>
-  </div>
-  <div class="rr">
-    <div class="wid car">R1</div>
-    <div class="meta"><div class="l1">老城 → Ferringhi Bay 海滨</div><div class="l2">Google 实时 17.3km · 周六傍晚北部沿海路堵车高发段——车上补觉，带薄外套</div></div>
-  </div>
-  <div class="note"><b>🚻 上车前排空</b>（45-60min 车程中途无停靠点——跟司机说好需要时可停）。堵车预案：周六傍晚最坏有 16:30 堵到午夜的先例——17:45 后到也不伤主线（日落 19:10，秀 19:30）。</div>
-</div>
-
-<!-- ═══════════ 第六节：日落+火舞秀+晚餐 ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar" style="width:4px;background:#C2571A;border-radius:2px;"></div>
-    <div class="t1">⑤ 日落 + 🔥火舞秀 + 收官晚餐（17:00-20:25）</div>
-    <div class="t2">秀免费 · 坐沙滩看<br>晚餐 RM100-150</div>
-  </div>
-  <div class="seg">
-<div class="head"><div class="n">海滩段（17:15-19:15）</div><div class="m">手信→LEVANT 一坐到底</div></div>
-<div class="bodyx">到场先把手信摊逛掉（爸妈回血）→ 17:45 进 LEVANT（B1-G2 地面层直面沙滩，Coco Nana 楼下）入座点单——进门报「要沙袋位」、挑正对 B2 栋舞台的沙袋（店员 17:30 起摆位）。点烤羊肉/鸡腿饭/鹰嘴豆泥/flatbread，3 人轻松过 RM100 低消；之后一坐到底：19:10 日落 → 蓝调 → 19:30 开演零挪动。</div>
-  </div>
-  <div class="seg">
-    <div class="head"><div class="n">🔥 火舞秀（19:30 开演，30-45min）</div><div class="m">免费 · 无需预约</div></div>
-<div class="bodyx"><b>19:15 沙袋位就位</b>——表演区在 B2 栋 Ferringhi Heart Beach Club 门前沙滩，我们的沙袋正对舞台 C 位。Fire Phantom 火舞团：火流星+吞火喷火+压轴「火花笼」（火星淋成一片，最像打铁花）。<b>默认坐 LEVANT 沙袋位看秀：低消 RM100/桌=全场最低、餐费即低消零额外成本</b>。同类位对比（FHBC 官方 inline.app 一手规则）：豆袋 RM150++/桌且不可订（18:30 排队拼手速）、Healing 座 RM300++/桌、Bora Bora 斜角 RM50/人。公共沙滩两侧站位=免费兜底。每晚两场 19:30/21:30、周二休（周六✓）。</div>
-  </div>
-  <div class="seg">
-<div class="head"><div class="n">散场即走（20:15-20:25）</div><div class="m">回程提前 ~50min</div></div>
-<div class="bodyx">收官晚餐已在 LEVANT 边吃边看完成——散场买单即走（无额外看秀费用），店内最后如厕，21:00 前回酒店，收尾宽裕、22:00 前躺下。备选链（LEVANT 沙袋订满时）：Santai Santai（B1-G5&G6·★4.7·普通桌无低消）→ FHBC 豆袋 RM150++/桌 → 沙滩免费区看秀+Long Beach 打车 6min。</div>
-  </div>
-<div class="tip">📍 Ferringhi Bay=海滨货柜屋园区，B1/B2/B3=Bay 1/2/3 栋号；每栋两层（G=地面层直面沙滩、1=二楼——FHBC 楼上露台/Coco Nana 在二楼）。火舞在 B2 栋 FHBC 门前沙滩；LEVANT 在 B1-G2、Santai 在 B1-G5&G6——同园区步行 1-2min</div>
-  <div class="story"><span class="lbl">🎙 给爸妈讲</span>火舞团是本地年轻人 2024 年 9 月组的（The Star 专题实锤）——火流星、吞火喷火球，压轴「火花笼」火星淋成一片，最像咱们国内的打铁花。不要钱的沙滩大戏，坐着看四十分钟。马来西亚的最后一晚，太阳落海+火舞+三大族群一桌吃全，齐了。</div>
-</div>
-
-<!-- ═══════════ 第七节：回程+收尾 ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar" style="width:4px;background:#7B5EA7;border-radius:2px;"></div>
-    <div class="t1">⑥ 回酒店 + 收尾三件事（20:50-22:00）</div>
-    <div class="t2">14.8km · RM30-40<br>明晨 04:45 叫早</div>
-  </div>
-  <div class="rr">
-    <div class="wid car">R3</div>
-    <div class="meta"><div class="l1">Ferringhi Bay → The Millen</div><div class="l2">Google 实时 ~25min · 夜间畅通——Ferringhi Bay 门口叫车</div></div>
-  </div>
-  <div class="warn"><b>⚠️ 今晚收尾三件事（明早 04:45 叫早，5:15 出发）：①行李查漏</b>（<b>大头今天下午已收</b>；今晚只查漏）<b>②前台核房账</b>（minibar/餐饮挂账提前结清明早不排队）<b>③问前台打包 3 份早餐盒</b>（Lili 6:30 才开赶不上，提前约 takeaway）——<b>22:00 前躺下</b>。🚻 出发前如厕（05:15-05:45 车程段无厕）。CX622 07:30 起飞，柜台 06:30 硬关。</div>
-</div>
-
-<!-- ═══════════ 预案卡 ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar" style="width:4px;background:#B23A3A;border-radius:2px;"></div>
-    <div class="t1">⚠️ 雨天预案 + 排队预案</div>
-    <div class="t2">两套</div>
-  </div>
-  <div class="warn"><b>雨：</b>①上午雨→壁画缩到姐弟共骑一张快拍，孙中山馆+印度庙照走（有屋檐/室内）②午餐不受影响（Deen Mutiara 有店面）③下午雨→休整顺延，海滩出发最晚延到 16:30 ④傍晚雨→<b>日落取消+火舞秀露天场大概率停演</b>（雨天通常只剩室内乐队）→海滩段整体取消，晚餐改 Gurney Plaza 美食广场/酒店 Lili，早回早睡 ⑤九皇爷诞姓周桥管制——本线不经过，零影响；满街黄旗=华人在过斋节。</div>
-<div class="warn"><b>排队/避雷：</b>Deen Mutiara 11:15 头波进最稳（12:30 后最凶）；排超 30min → 同街 Hutton 路备选。<b>榴莲三不碰</b>：①老城拼盘店（聚榴堂 5 拼 RM208 实肉 400g·10/05 实锤）②汕头街夜市 Happy Mart 旁车摊（不问就开果强卖·07/23 实锤）③单价 RM40+ 普通种；行家动作=只论个、让老板挑、酸了当场换。LEVANT 沙袋订满→Santai Santai（B1-G5&G6·★4.7·普通桌无低消）→ 沙滩免费区。火舞位次：LEVANT 沙袋押金 RM60/人抵餐（可电话订 +60 11-7011 0107）＞FHBC 豆袋 RM150++（不可订）＞沙滩免费先到先得。</div>
-</div>
-
-<!-- ═══════════ 实用卡 ═══════════ -->
-<div class="sec">
-  <div class="sec-h">
-    <div class="bar" style="width:4px;background:#2ECC71;border-radius:2px;"></div>
-    <div class="t1">💰 今日账本 + 🚻 厕所动线</div>
-    <div class="t2">3 人口径</div>
-  </div>
-  <div class="bodyx" style="padding-top:10px;">
-    <b style="color:#FFB03A;">💰 花销（v17.3）：</b>孙中山馆 RM30 + Deen Mutiara 午餐 RM50-70 + 榴莲 RM20-70（普通种 20-35/个·猫山王 50-70/个·拼盘不碰）+ Grab 6 程 RM90-125 + LEVANT 晚餐+沙袋 RM150-250 + 火舞秀 RM0 ≈ <b>RM300-450（≈¥480-720）</b>（较旧版 AGL+娘惹馆方案省 RM460-620）<br><br>
-    <b style="color:#7FD1FF;">🚻 厕所时间轴：</b>08:55 酒店出发前 → 老城段厕所少（孙中山馆内有；庙内不宜）→ 11:15 Deen Mutiara 店内 → 12:55 回酒店 → <b>15:15 去榴莲档前先排空（档口无厕）·15:55 出发海滩前排空（45-60min 车程）</b> → 17:45 LEVANT 坐店（一坐到底）→ 20:15 散场前店内再排空<br><br>
-    <b style="color:#2ECC71;">📞 关键号码：</b>Deen Mutiara +60 11-1683 9597 · LEVANT 订位 +60 11-7011 0107 · 前晚已约 05:15 Grab/Grab Reserve（CX 柜台 06:30 硬关）
-  </div>
-</div>
-
-<div class="footer">— 马来西亚 8 天 · 乔治市老城 · 深度收官日 · 自由导航版 v17.3 —<br>定位名点开即到 Google Maps · 游览图 Esri 卫星底图 · 话术供 VoxCPM 转音频</div>
-
-
-<div class="daysep"></div><a id="day08"></a>
-
-
-<div class="hero">
-  <div class="datechip">10/11（周日）· 自由导航版 v14</div>
+  <div class="datechip">10/11（周日）· 自由导航版 v15</div>
   <h1>收官日 · 槟城 → 香港 → 上海</h1>
   <div class="sub">凌晨 CX622 飞港 → <b style="color:#FFB03A;">落地直接入境（不走 Transfer）</b> → 东荟城简餐 → 昂坪缆车+天坛大佛+奥莱 → 17:30-18:00 回机场 → 贵宾室晚饭洗澡 → CX302 深夜回浦东<br>行李全程直挂，香港 9.5 小时空手逛</div>
   <div class="chips">
@@ -329,6 +119,112 @@
   <div class="row"><div class="t">20:15</div><div class="e">出贵宾室→步行至登机口（<b style="color:#FF8A8A;">20:50 关闸</b>——国泰 T-15min 新规）</div></div>
   <div class="row"><div class="t">21:05</div><div class="e"><b style="color:#FFB03A;">CX302 起飞</b> → 23:55 落浦东 T2（深夜打车排队 20-30min，到家 ~01:00）</div></div>
 
+
+<!-- ═══════════ 关键四问（v15 新增） ═══════════ -->
+<div class="sec">
+  <div class="sec-h">
+    <div class="bar" style="width:4px;background:#FFB03A;border-radius:2px;"></div>
+    <div class="t1">❓ 关键四问 · 一步一步说清楚</div>
+    <div class="t2">下机→的士→缆车<br>→免费游柜台</div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">Q1 · 下飞机以后我去哪里？</div><div class="m">跟「抵港 Arrivals」</div></div>
+    <div class="bodyx">
+      ① 11:30 落地 HKIA T1，下机后跟 <b>「抵港 / Arrivals / 入境 Immigration」</b>指示牌走——<b>不要跟「转机 Transfer」</b>（过转机安检就出不去大屿山，这是 v11.12 修订的核心）。<br><br>
+      ② 沿扶梯下到 L5 抵港层，<b>先上厕所再排队</b>（机上 4h + 入境排队最长 1h，这是全天最关键厕所窗口）。<br><br>
+      ③ 排 <b>「访客 Visitors」人工柜台</b>（首次访港无 e-道）。中国护照<b>过境免签 7 天</b>：递<b>护照 + CX302 登机牌</b>，打印行程单备查。<br><br>
+      ④ 柜台常见三问 & 怎么答：<br>
+      · 「来香港做什么？」→「<b>转机回上海，中间 9 个多小时，出来看看大屿山</b>」<br>
+      · 「住哪里？」→「<b>不住酒店，今晚 21:05 的 CX302 回上海</b>」<br>
+      · 「回程机票出示一下」→ 递 CX302 登机牌 / 行程单<br><br>
+      ⑤ 目标 <b>12:45 前出关</b>，进到达厅 A（接机大厅）→ 下一站打车去东涌。
+    </div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">Q2 · 乘车去哪个「东涌站」？</div><div class="m">是东涌，不是东涌东</div></div>
+    <div class="bodyx">
+      ① 要去的是<b>「东涌 Tung Chung」</b>——大屿山北岸新市镇，机场隔壁（车程仅 ~10 分钟 / 5.6km）。<br><br>
+      ② ⚠️ <b>「东涌东站」是 2029 年才通车的新站（在建）</b>，导航输入会联想出它——<b>别选</b>；也无所谓「东涌西」。导航直接输<b>「昂坪360 东涌缆车站」或「东荟城 Citygate」</b>最稳。<br><br>
+      ③ 打车（3 人默认）：出到达厅跟<b>「的士 Taxi」</b>指示走缓坡道到的士站；<b>排蓝色候车队列（大屿山的士）</b>——蓝车专营机场/东涌/大屿山，去东涌最对口，队也短。跟司机说<b>「东涌缆车站，达东路」</b>（英文 "Ngong Ping 360 cable car terminal, Tat Tung Road"），车费 <b>HK$50-70</b>。<br><br>
+      ④ 省钱备选 S1 巴士：HK$3.7/人、约 10-15 分钟一班、~21 分钟到东涌巴士总站（东荟城旁）——3 人合计 HK$11，但中午带爸妈拖时间，<b>默认打车</b>；S1 留到傍晚回机场时用（R3）。
+    </div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">Q3 · 去坐缆车的路线？</div><div class="m">达东路11号 · 东荟城旁</div></div>
+    <div class="bodyx">
+      ① 缆车站全名<b>「昂坪360 东涌缆车站」</b>，地址<b>东涌达东路 11 号</b>——就在<b>东荟城 Citygate Outlets 商场旁</b>，一门之隔：<b>看到东荟城大商场 = 到了</b>。<br><br>
+      ② 打车：跟司机说「东涌缆车站」即可（司机都知道），落车即站。<br><br>
+      ③ 若坐 S1：东涌巴士总站下车，往东荟城方向步行 2-3 分钟。<br><br>
+      ④ 若从港铁东涌站走：<b>B 出口</b>出站，沿达东路步行约 <b>5 分钟</b>，一路跟「昂坪360 Ngong Ping 360」指示牌。<br><br>
+      ⑤ 进站：<b>电子票（np360 官网 / Klook 提前买好）扫码直接进</b>，免购票队；<b>标准车厢即可</b>（水晶车厢玻璃地板，长辈慎选）。节奏：13:35 排队 → 13:55 上山 → 25 分钟到昂坪。
+    </div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">Q4 · 哪里找 Trip.com 免费旅游柜台？</div><div class="m">捡漏备份 · 非主线</div></div>
+    <div class="bodyx">
+      ① 性质：HKIA 官方<b>免费中转游</b>（转机 ≥7h 可报，你 9.5h 够格）。按你的落地时间 <b>12:00 班大概率赶不上</b>——它只是捡漏备份，<b>主线仍是东涌-昂坪</b>。<br><br>
+      ② <b>两个位置（记这两个就行）：</b><br>
+      · <b>登记柜台：T1 转机区 E1（Transfer Desks E1）</b>——禁区内、L5 抵港层、<b>办入境手续之前</b>；想问 12:00 班余位在这问（转机客提前 60min 到场验资格）<br>
+      · <b>集合点：接机大厅 A 的 Trip.com 柜台 A03/A04</b>——<b>入境之后</b>的非禁区；walk-in 最晚开团前 45min<br><br>
+      ③ 三条线：10:00-14:00 闲适之岛 · <b>12:00-16:00 文化遗产 Citywalk（深水埗+黄大仙祠）</b> · 17:30-21:30 维港西九（回程 21:30 超登机时间，<b>不可用</b>）。<br><br>
+      ④ 决策口径：只有<b>航班早到 + 通关快（11:00 前出闸）</b>才值得冲 12:00 班——捡到 = 与昂坪线<b>二选一</b>（该班 16:00 回机场）；赶不上/满员 = 原案照走，<b>零损失</b>。
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════ 国泰商务舱流程（v15 新增） ═══════════ -->
+<div class="sec">
+  <div class="sec-h">
+    <div class="bar" style="width:4px;background:#1E8449;border-radius:2px;"></div>
+    <div class="t1">✈️ 国泰商务舱 · 全流程与应答模板</div>
+    <div class="t2">两段均商务舱<br>照着说就行</div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">① 槟城值机（05:45 到柜台）</div><div class="m">一次拿两段登机牌</div></div>
+    <div class="bodyx">
+      <b>开口模板：</b>「我们三位同一个预订，麻烦出 <b>CX622 和 CX302 两段登机牌</b>，<b>行李直挂到上海浦东</b>。」<br><br>
+      · 商务舱托运 <b>40kg/人</b>（以行程单标注为准）——3 个箱子怎么装都够。<br>
+      · 可能被问「充电宝随身吗？」→ <b>充电宝必须随身、不能托运</b>。<br>
+      · 商务舱柜台基本不用排；想调座当场说「三个位尽量一起、靠前」。<br>
+      · 槟城出发有 <b>Plaza Premium 贵宾室</b>（3 楼夹层 · 国际出发区 · 近 A3 闸），商务舱可进——06:00 出境后登机前可进去坐坐。
+    </div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">② CX622 机上（07:30-11:30）</div><div class="m">4h · 早餐+补觉</div></div>
+    <div class="bodyx">
+      · 跟<b>商务舱优先通道</b>登机（Priority Boarding）。<br>
+      · 空乘餐前会问喝什么——模板：「<b>热水就好，谢谢</b>」/「橙汁，谢谢」（爸妈热水最稳）。<br>
+      · 长辈照应可以主动说：「我爸妈第一次坐商务舱，麻烦多照应」——国泰空乘普遍吃这套。<br>
+      · 落地前问一句空乘或看屏幕：<b>确认 CX302 登机口号</b>（也可在贵宾室再核一次）。
+    </div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">③ 香港白天（A2 方案关键动作）</div><div class="m">中午不进贵宾室</div></div>
+    <div class="bodyx">
+      · 落地跟 Arrivals <b>入境</b>（不走 Transfer）——<b>中午不进贵宾室</b>：贵宾室全在转机安检后的禁区内，进去=出不去大屿山。<br>
+      · 午饭 = 东荟城美食广场（HK$150-250/3 人快吃）。<br>
+      · 17:30-18:00 回机场 → 二次安检+出境 → 这时才进贵宾室。
+    </div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">④ 晚间贵宾室（18:00-20:15）</div><div class="m">The Pier Business 首选</div></div>
+    <div class="bodyx">
+      · 进门：出示 <b>CX302 登机牌 + 护照</b>，扫登机牌进（商务舱即资格，不需要别的）。<br>
+      · <b>首选 The Pier Business 玉衡堂</b>：T1 六楼近 <b>65 号登机口</b>，05:30-00:30——国泰最大商务贵宾室，<b>现煮面档 + 14 间淋浴套房 + 茶馆</b>。登机口远就改 The Wing（近 1-4 号闸）。<br>
+      · 淋浴模板：「<b>三位，麻烦排三个淋浴间</b>」——<b>19:00 前淋浴位最空</b>。<br>
+      · 面档模板：坐下说「<b>一碗云吞面，谢谢</b>」（现煮、免费）；不想吃面有 Food Hall 自取（热菜/沙拉/芝士/甜品）+ 手冲咖啡车。<br>
+      · 全部免费、离开不用结账；每人带瓶水走没问题。<br>
+      · <b>20:15 出贵宾室直奔登机口</b>——20:50 关闸（国泰 T-15 新规）。
+    </div>
+  </div>
+  <div class="seg">
+    <div class="head"><div class="n">⑤ CX302 夜航回沪（21:05-23:55）</div><div class="m">2h50m · 到家 ~01:00</div></div>
+    <div class="bodyx">
+      · 21:05 起飞的短程夜航，正餐<b>可能</b>只有轻食/简餐——<b>在贵宾室吃饱再上机</b>最稳；上机可问「今晚有热餐吗？」<br>
+      · 商务舱可平躺，2h50m 睡一觉；落地浦东 T2 23:55，行李直挂提取，深夜打车排队 20-30min，到家 ~01:00——<b>爸妈次日别排早事</b>。
+    </div>
+  </div>
+</div>
 
 <!-- ═══════════ 第零节：全天总览 ═══════════ -->
 <div class="sec">
